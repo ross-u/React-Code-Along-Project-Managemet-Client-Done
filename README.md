@@ -235,10 +235,12 @@ handleFormSubmit = (event) => {
 
 
 
-
+<br>
 <br>
 
 #### Update `App.js` and include `<AddProject />`
+
+<br>
 
 ```jsx
 //	src/App.js
@@ -359,18 +361,16 @@ export default ProjectList;
     })
   }
 ```
+<br>
+<br>
 
 
+#### Uncomment the line in `AddProject.js` -  `this.props.getData()` passed from the parent component. 
+
+#### It gets all projects every time new project is posted to the API.
 
 
-
-
-
-### Uncomment the line in `AddProject.js` -  `this.props.getData()` passed from the parent component. 
-
-### It gets all projects every time new project is posted to the API.
-
-
+<br>
 
 `projects/AddProject`
 
@@ -390,10 +390,6 @@ handleFormSubmit = (event) => {
     .catch( error => console.log(error) )
   }
 ```
-
-
-
-
 
 
 
