@@ -879,11 +879,10 @@ renderAddTaskForm = () => {
   }
 }	
 
+    //
+      //
 
-
-...
-		...
-			// INSIDE `render()` put `renderAddTaskForm` last
+      // INSIDE `render()` put `renderAddTaskForm` last
 
         <button onClick={() => this.deleteProject()}>
     	    Delete project
@@ -912,9 +911,8 @@ renderAddTaskForm = () => {
 
 
 
-				{ this.renderAddTaskForm() }
-
-				// AFter the last line of code, render list of tasks	
+        { this.renderAddTaskForm() }
+        // After the last line of code, render list of tasks	
 	
         { 
           (this.state.tasks.length === 0) ?
@@ -948,11 +946,9 @@ renderAddTaskForm = () => {
 // components/projects/ProjectDetails.js  
 
 
+        <div>{this.renderAddTaskForm()}</div>
+        // After the last line of code, render list of tasks
 
-				<div>{this.renderAddTaskForm()}</div>
-
-				// AFter the last line of code, render list of tasks	
-	
         { 
           (this.state.tasks.length === 0) ?
            <h2>NO TASKS TO DISPLAY</h2>
