@@ -9,14 +9,10 @@ After this lesson, you will be able to:
 
 
 
-
-
-
-
 In this lesson, we will build a  `React` application to consume our REST API.
 
 
-
+<br>
 
 
 #### Let’s start with creating the React app using CLI command:
@@ -25,8 +21,7 @@ In this lesson, we will build a  `React` application to consume our REST API.
 create-react-app project-management-client
 ```
 
-
-
+<br>
 
 
 We already updated the port where our server side is running-we changed it from `3000` to `5000`, so we have: 
@@ -37,22 +32,19 @@ We already updated the port where our server side is running-we changed it from 
 - `project-management-client` runs on `http://localhost:3000`
 
 
+<br>
 
 
-
-
-
-### Install `axios` for http requests and `react-router-dom`
+#### Install `axios` for http requests and `react-router-dom`
 
 ```bash
 npm install axios react-router-dom --save
 ```
 
+<br>
 
 
-
-
-### Create folders for the components
+#### Create folders for the components
 
 ```bash
 mkdir src/components     
@@ -62,10 +54,7 @@ mkdir src/components/navbar
 
 
 
-
-
-
-
+<br>
 
 
 #### Add styles to the app
@@ -137,10 +126,7 @@ li {
 
 
 
-
-
-
-
+<br>
 
 
 #### Setup the `<Router>` in `index.js`
@@ -169,10 +155,10 @@ registerServiceWorker();
 
 
 
+<br>
 
 
-
-### Create `<AddProject />` component.
+#### Create `<AddProject />` component.
 
 ```jsx
 // components/projects/AddProject.js
@@ -218,7 +204,7 @@ export default AddProject;
 
 
 
-
+<br>
 
 #### Let's create the methods `handleFormSubmit` and `handleChange`
 
@@ -250,7 +236,7 @@ handleFormSubmit = (event) => {
 
 
 
-
+<br>
 
 #### Update `App.js` and include `<AddProject />`
 
@@ -277,23 +263,28 @@ export default App;
 
 
 
-
+<br>
 
 #### Start the server  before running react app.
 
-
+<br>
 
 #### Run the app `npm start`  which will open the React app in the  browser.
 
+<br>
 
+<br>
 
 #### Using a created form submit a new Project and check the projects in Postman:
+
+<br>
+
 
 ####   `GET` - `http://localhost:5000/api/projects`
 
 
 
-
+<br>
 
 
 
@@ -352,7 +343,7 @@ export default ProjectList;
 
 
 
-
+<br>
 
 #### Finish the method `getAllProjects()` in `<ProjectList>`
 
@@ -408,7 +399,7 @@ handleFormSubmit = (event) => {
 
 
 
-
+<br>
 
 #### Create a `<ProjectDetails />`component
 
@@ -435,7 +426,7 @@ export default ProjectDetails;
 
 
 
-
+<br>
 
 #### Create `<Navbar>` component
 
@@ -503,7 +494,7 @@ export default App;
 
 
 
-
+<br>
 
 #### Update `<ProjectDetails>` to add functionality
 
@@ -548,7 +539,7 @@ export default ProjectDetails;
 
 
 
-
+<br>
 
 #### Finalize `getSingleProject()` method in `<ProjectDetails>`
 
@@ -575,7 +566,7 @@ getSingleProject = () => {
 
 
 
-
+<br>
 
 #### Create `EditProject.js` component with a form to update a specific project.
 
@@ -639,7 +630,7 @@ export default EditProject;
 
 
 
-
+<br>
 
 #### Finalize `handleFormSubmit` in `EditProject.js`
 
@@ -676,7 +667,7 @@ handleFormSubmit = (event) => {
 
 
 
-
+<br>
 
 #### Place `<EditProject>` form in `ProjectDetails.js`
 
@@ -729,7 +720,7 @@ handleFormSubmit = (event) => {
 
 
 
-
+<br>
 
 #### Update `ProjectDetails` and create additional method to make DELETE requests to the API.
 
@@ -838,7 +829,7 @@ export default AddTask;
 
 
 
-
+<br>
 
 #### Finalize `handleFormSubmit` in `AddTask.js`
 
@@ -871,7 +862,7 @@ handleFormSubmit = () => {
 
 
 
-
+<br>
 
 #### Add component `<AddTask />` to the `ProjectDetails.js`
 
@@ -952,7 +943,7 @@ renderAddTaskForm = () => {
 
 
 
-
+<br>
 
 #### Refactor each task into a Link
 
@@ -991,7 +982,7 @@ renderAddTaskForm = () => {
 
 
 
-
+<br>
 
 #### Update routes, and create route to render `<TaskDetails>`
 
@@ -1032,7 +1023,7 @@ export default App;
 
 
 
-
+<br>
 
 #### Create `<TaskDetails>` component
 
