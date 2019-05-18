@@ -898,7 +898,8 @@ renderAddTaskForm = () => {
 
 
 
-
+<br>
+<br>
 
 
 
@@ -1065,10 +1066,8 @@ class TaskDetails extends Component {
 export default TaskDetails;
 ```
 
-
-
-
-
+<br>
+<br>
 
 
 ### NEXT STEPS:
