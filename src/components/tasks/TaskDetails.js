@@ -2,7 +2,7 @@
 
 import React, { Component } from 'react';
 import axios from 'axios';
-import Rainbow from './../hoc/Rainbow'
+import Higher from './../hoc/Higher'
 
 
 class TaskDetails extends Component {
@@ -45,4 +45,4 @@ class TaskDetails extends Component {
   }
 }
 
-export default Rainbow(TaskDetails);
+export default Higher(TaskDetails);
