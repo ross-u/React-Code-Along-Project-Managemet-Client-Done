@@ -37,7 +37,6 @@ class TaskDetails extends Component {
         <p>{this.state.description}</p>
 
         <button onClick={this.handleClick} >GET JOKE</button>
-        {/* To go back we can use react-router-dom method `history.goBack()` available on `props` object */}
         <button onClick={this.props.history.goBack} >Go Back</button>
       </div>
     )
