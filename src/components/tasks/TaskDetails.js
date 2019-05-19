@@ -25,7 +25,6 @@ class TaskDetails extends Component {
   handleClick = () => {
      this.props.getData()
       .then((response) =>  {
-        console.log('DATA', response.data)
         this.setState({ title: response.data.value})
       })
   } 
