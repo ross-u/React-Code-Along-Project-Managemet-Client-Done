@@ -2,6 +2,7 @@
 
 import React, { Component } from 'react';
 import axios from 'axios';
+import Rainbow from './../hoc/Rainbow'
 
 
 class TaskDetails extends Component {
@@ -21,6 +22,14 @@ class TaskDetails extends Component {
     .catch( (err) => console.log(err))
   }
 
+  handleReset = () => {
+     this.props.getData()
+      .then((response) =>  {
+        console.log('DATA', response.data)
+        this.setState({ title: response.data.value})
+      })
+  } 
+
   render(){
     return(
       <div>
@@ -28,6 +37,7 @@ class TaskDetails extends Component {
         <h2>{this.state.title}</h2>
         <p>{this.state.description}</p>
 
+        <button onClick={this.handleReset} >GET JOKE</button>
         {/* To go back we can use react-router-dom method `history.goBack()` available on `props` object */}
         <button onClick={this.props.history.goBack} >Go Back</button>
       </div>
@@ -35,4 +45,4 @@ class TaskDetails extends Component {
   }
 }
 
-export default TaskDetails;
+export default Rainbow(TaskDetails);
