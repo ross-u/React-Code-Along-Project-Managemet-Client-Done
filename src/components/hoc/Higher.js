@@ -1,7 +1,7 @@
 import React from 'react'
 import axios from 'axios';
 
-const Rainbow = (WrappedComponent) => {
+const Higher = (WrappedComponent) => {
 
   const colors = ['red', 'pink', 'orange', 'green', 'pink', 'yellow', 'purple', 'blue', 'cyan'];
   const randomColor = colors[Math.floor(Math.random() * 8)];
@@ -19,4 +19,4 @@ const Rainbow = (WrappedComponent) => {
   }
 }
 
-export default Rainbow; 
+export default Higher; 
